@@ -10,6 +10,13 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите коэффицент k");
+            float k = (float)Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите коэффицент b");
+            float b = (float)Convert.ToDouble(Console.ReadLine());
+            Uravnenie uravnenie = new Uravnenie(k, b);
+            Console.WriteLine(uravnenie.Root());
+            Console.ReadKey();
         }
     }
 }
