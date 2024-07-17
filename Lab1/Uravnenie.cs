@@ -19,6 +19,8 @@ namespace Lab1
 
         public string Root() 
         {
+            if (k == 0) 
+                return "Решения нет";
             float x = -b / k;
             return $"X равен: {x}";
         }
